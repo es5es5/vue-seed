@@ -107,7 +107,7 @@ const routes = [
             children: [
               {
                 path: 'list',
-                name: 'WorkList',
+                name: '업무보고_일일업무보고_리스트',
                 meta: {
                   title: '업무보고 리스트'
                 },

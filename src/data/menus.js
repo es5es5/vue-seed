@@ -14,7 +14,7 @@ const MENUS = [
         params: null,
         order: 0,
         icon: null,
-        roles: ['OTC_ADMIN', 'ROLE_ADMIN', 'OTC_TESTER', 'CLINIC_USER'],
+        roles: ['ROLE_ADMIN'],
         // roles: ['OTC_ADMIN', 'ROLE_ADMIN', 'EFA_MANAGER'],
         subMenus: null
       },
@@ -26,7 +26,7 @@ const MENUS = [
     params: null,
     order: 0,
     icon: 'list-alt',
-    roles: ['OTC_ADMIN', 'ROLE_ADMIN', 'CLINIC_USER', 'OTC_TESTER'],
+    roles: ['ROLE_ADMIN'],
     subMenus: [
       {
         name: '일일업무보고',
@@ -34,7 +34,7 @@ const MENUS = [
         params: null,
         order: 1,
         icon: null,
-        roles: ['OTC_ADMIN', 'ROLE_ADMIN', 'CLINIC_USER', 'OTC_TESTER'],
+        roles: ['ROLE_ADMIN'],
         subMenus: null
       }
     ]

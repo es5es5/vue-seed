@@ -67,9 +67,9 @@
 
 <script>
 export default {
-  name: 'SignList',
+  name: 'ContractList',
   created () {
-    this.searchDocList({ type: 'init' })
+    // this.searchDocList({ type: 'init' })
   },
   components: {
   },

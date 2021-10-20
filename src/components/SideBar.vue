@@ -43,6 +43,9 @@ import MENUS from '@/data/menus.js'
 
 export default {
   name: 'SideBar',
+  created () {
+    console.log(this.menus)
+  },
   data () {
     return {
       menus: MENUS

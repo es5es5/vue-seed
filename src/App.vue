@@ -12,17 +12,23 @@
 export default {
   name: 'App',
   created () {
-    this.initProtocalPlugins()
-    // 쿠키 체크 후, 로그인 정보 없으면 router에 의해 login으로 보내짐
-    if (!this.$cookie.get('auth-token') && !this.$cookie.get('Authorization-v2')) {
-      this.init = true
-      return false
-    }
+    this.$store.commit('setUser', {
+      employeeNumber: '1104899',
+      deptName: 'IT지원본부',
+      nameBase: '김루이',
+    })
+    this.$store.commit('setAuthRoles', ['ROLE_ADMIN'])
+    // this.initProtocalPlugins()
+    // // 쿠키 체크 후, 로그인 정보 없으면 router에 의해 login으로 보내짐
+    // if (!this.$cookie.get('auth-token') && !this.$cookie.get('Authorization-v2')) {
+    //   this.init = true
+    //   return false
+    // }
 
-    this.setAxios()
-      .then(this.getUser)
-      .then(this.getAuthRoles)
-    this.getCommonCodes()
+    // this.setAxios()
+    //   .then(this.getUser)
+    //   .then(this.getAuthRoles)
+    // this.getCommonCodes()
   },
   methods: {
     loadScripts (plugins) {
