@@ -1,24 +1,26 @@
 # vue-seed
 
-## Project setup
-```
-npm install
-```
+## This is simple Dashboard Vue Project.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## How to run
+```bash
+// clone project
+$ git clone https://github.com/es5es5/vue-theme.git
+$ cd vue-theme
 
-### Compiles and minifies for production
-```
-npm run build
-```
+// get submodules
+$ git submodule init
+$ git submodule sync
+$ git submodule update
 
-### Lints and fixes files
-```
-npm run lint
-```
+// run dev server 
+$ npm install
+$ npm run serve
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+App running at:
+- Local:   http://localhost:8080/
+- Network: http://192.168.37.205:8080/
+
+Note that the development build is not optimized.
+To create a production build, run npm run build.
+```
