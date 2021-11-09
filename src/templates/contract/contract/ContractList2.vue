@@ -8,7 +8,7 @@
       <button type="button" class="btn-search" @click="searchRequest()">검색</button>
     </div>
     <div class="action_wrap">
-      <button type="button" class="btn primary">등록</button>
+      <button type="button" class="btn primary" @click="goCreate">등록</button>
       <!-- <button type="button" class="btn">엑셀다운로드</button> -->
     </div>
     <div class="table_wrap table-hover">
@@ -67,7 +67,7 @@
 
 <script>
 export default {
-  name: 'ContractList2',
+  name: 'ContractList',
   created () {
     // this.searchDocList({ type: 'init' })
   },
@@ -120,9 +120,14 @@ export default {
 
       this.COMMON.searchPagination(option)
     },
+    goCreate () {
+      this.$router.push({
+        name: '계약_신계약_등록',
+      })
+    },
     goDetail (detailId) {
       this.$router.push({
-        name: 'ContractDetail',
+        name: '계약_신계약_상세',
         params: {
           detailId
         }
